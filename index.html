@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dheer Harsora — Student Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">DH.</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#upcoming-projects">Upcoming</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#journey">Journey</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Open to Work</button>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <canvas id="particleCanvas"></canvas>
+  <div class="hero-content">
+    <div class="hero-badge"><span class="badge-dot"></span> Available for internships · 2025</div>
+    <h1 class="hero-name">
+      <span class="gradient-text">Dheer</span><br />Harsora.
+    </h1>
+    <div class="hero-role">Student Developer &nbsp;/&nbsp; Aspiring Software Engineer</div>
+    <p class="hero-tagline">I turn ideas into real, working applications — one project at a time. Currently studying AI & Data scince and building things that matter</p>
+    <div class="hero-ctas">
+      <a href="#projects" class="btn-primary">View Projects</a>
+      <a href="#contact" class="btn-ghost">Let's Connect →</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-label reveal">// About</div>
+  <h2 class="section-title reveal">Curiosity<br />drives everything.</h2>
+  <div class="about-grid">
+    <div class="about-bio reveal">
+      <p>Hey — I'm Dheer, a <strong>second-year AI & Data Science student</strong> who's genuinely obsessed with building things. Not just writing code, but creating experiences that solve real problems.</p>
+      <p>I started with Full stack , c,c++, Java, Python and kept going. Now I'm <strong>exploring  AI integrations, and system design</strong> —  </p>
+      <p>What drives me is the magic of seeing an idea go from a blank file to something someone can actually use. That loop — build, ship, iterate — is what I'm here for.</p>
+    </div>
+    <div class="about-stats reveal">
+      <div class="stat-card"><div class="stat-num">2</div><div class="stat-label">Projects built </div></div>
+      <div class="stat-card"><div class="stat-num">12+</div><div class="stat-label">Technologies explored</div></div>
+      <div class="stat-card"><div class="stat-num">3</div><div class="stat-label">upcoming projects</div></div>
+      <div class="stat-card"><div class="stat-num">∞</div><div class="stat-label">Things still to learn</div></div>
+    </div>
+  </div>
+</section>
+
+<!--  PROJECTS -->
+<section id="projects">
+  <div class="projects-header">
+    <div>
+      <div class="section-label reveal">//  Projects</div>
+      <h2 class="section-title reveal">Things I've built.</h2>
+    </div>
+    <div class="slider-controls reveal">
+      <button class="slider-btn" id="prevBtn" aria-label="Previous">←</button>
+      <div class="slider-dots" id="sliderDots"></div>
+      <button class="slider-btn" id="nextBtn" aria-label="Next">→</button>
+    </div>
+  </div>
+
+  <div class="slider-wrapper">
+    <div class="slider-track" id="sliderTrack">
+
+      <div class="project-card">
+        <div class="project-thumb" style="background: linear-gradient(135deg,#1a0a2e,#2d1060)">
+          <span class="project-emoji">📃</span>
+          <div class="project-thumb-overlay">View Project ↗</div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span class="tag">html </span><span class="tag">JavaScript</span><</span></div>
+          <div class="project-title">To-Do list <span class="project-arrow">↗</span></div>
+          <p class="project-desc">A simple yet effective to-do list application with a clean UI for managing tasks.</p>
+          <a href="https://harsoradheer19-hub.github.io/To_Do_LIST/" class="project-link">View on GitHub ↗</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-thumb" style="background: linear-gradient(135deg,#0a1e2e,#104060)">
+          <span class="project-emoji">✖️⭕</span>
+          <div class="project-thumb-overlay">View Project↗</div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span class="tag">python</span></span></span></div>
+          <div class="project-title">TicTacToe <span class="project-arrow">↗</span></div>
+          <p class="project-desc">A classic Tic Tac Toe game with a modern UI and responsive design.</p>
+          <a href="https://github.com/harsoradheer19-hub/Tic_Tac_Toe" class="project-link">View on GitHub ↗</a>
+        </div>
+      </div>
+
+</section>
+
+<!-- UPCOMING PROJECTS -->
+<section id="upcoming-projects">
+  <div class="section-label reveal">// Upcoming Projects</div>
+  <h2 class="section-title reveal">What's cooking.</h2>
+  <div class="upcoming-grid">
+
+    <div class="upcoming-card reveal">
+      <div class="upcoming-status">In Progress</div>
+      <div class="upcoming-icon">🤖</div>
+      <div class="upcoming-title">MindMap AI</div>
+      <p class="upcoming-desc">An AI-powered study assistant that generates quizzes, summarizes notes, and answers questions from uploaded PDFs. Built to help students study smarter</p>
+      <div class="upcoming-tags"><span class="tag">React</span><span class="tag">WebSockets</span><span class="tag">OpenAI</span></div>
+      <div class="upcoming-progress-wrap">
+        <div class="upcoming-progress-label"><span>Progress</span><span>60%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-width="60"></div></div>
+      </div>
+    </div>
+
+    <div class="upcoming-card reveal">
+      <div class="upcoming-status upcoming-status--planned">Planned</div>
+      <div class="upcoming-icon">🔐</div>
+      <div class="upcoming-title">VaultPass</div>
+      <p class="upcoming-desc">A secure password manager with end-to-end encryption and seamless cross-platform synchronization.</p>
+      <div class="upcoming-tags"><span class="tag">Go</span><span class="tag">CLI</span><span class="tag">Docker</span></div>
+      <div class="upcoming-progress-wrap">
+        <div class="upcoming-progress-label"><span>Progress</span><span>15%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-width="15"></div></div>
+      </div>
+    </div>
+
+    <div class="upcoming-card reveal">
+      <div class="upcoming-status upcoming-status--research">Research</div>
+      <div class="upcoming-icon">📡</div>
+      <div class="upcoming-title">CampusSync</div>
+      <p class="upcoming-desc">A unified campus app — timetables, mess menus, club events, and notices in one place. Solving a real pain point for my university.</p>
+      <div class="upcoming-tags"><span class="tag">Flutter</span><span class="tag">Firebase</span><span class="tag">Dart</span></div>
+      <div class="upcoming-progress-wrap">
+        <div class="upcoming-progress-label"><span>Progress</span><span>30%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-width="30"></div></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-label reveal">// Skills</div>
+  <h2 class="section-title reveal">Tools of the trade.</h2>
+  <div class="skills-layout">
+    <div class="reveal">
+      <div class="skill-group-title">Languages & Frameworks</div>
+      <div class="skill-bar-row">
+        <div class="skill-bar-row">
+        <div class="skill-bar-header"><span class="skill-bar-name">Html/Css</span><span class="skill-bar-pct">94%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-width="94"></div></div>
+      </div>
+        <div class="skill-bar-header"><span class="skill-bar-name">Python</span><span class="skill-bar-pct">88%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-width="88"></div></div>
+      </div>
+      <div class="skill-bar-row">
+        <div class="skill-bar-header"><span class="skill-bar-name">JavaScript / TypeScript</span><span class="skill-bar-pct">82%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-width="82"></div></div>
+      </div>
+      <div class="skill-bar-row">
+        <div class="skill-bar-header"><span class="skill-bar-name">React / Next.js</span><span class="skill-bar-pct">78%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-width="78"></div></div>
+      </div>
+      <div class="skill-bar-row">
+        <div class="skill-bar-header"><span class="skill-bar-name">C / C++</span><span class="skill-bar-pct">70%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-width="70"></div></div>
+      </div>
+      <div class="skill-bar-row">
+        <div class="skill-bar-header"><span class="skill-bar-name">SQL / PostgreSQL</span><span class="skill-bar-pct">72%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-width="72"></div></div>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="skill-group-title">Tools & Platforms</div>
+      <div class="icon-grid">
+        <div class="icon-pill">🔧 Git / GitHub</div>
+        <div class="icon-pill">< /> HTML</div>
+        <div class="icon-pill">☁️ AWS basics</div>
+        <div class="icon-pill"> CSS</div>
+        <div class="icon-pill"> JavaScript</div>
+        <div class="icon-pill">🔄 REST APIs</div>
+        <div class="icon-pill">🧪 Mysql </div>
+        <div class="icon-pill"> React</div>
+        <div class="icon-pill">🗄️ MongoDB</div>
+        <div class="icon-pill">⚡ Supabase</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JOURNEY -->
+<section id="journey">
+  <div class="section-label reveal">// Learning Journey</div>
+  <h2 class="section-title reveal">Growth, not titles.</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">2026 — Present</div>
+      <div class="timeline-title">Diving into Systems & AI</div>
+      <p class="timeline-desc">Building full-stack projects with AI integrations. Exploring Go for backend services.</p>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">2025</div>
+      <div class="timeline-title"> Python </div>
+      <p class="timeline-desc">Completed Python for Everybody Specialization from (University of Michigan) from coursera .  data structures and algorithms. </p>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">2025</div>
+      <div class="timeline-title">Full-Stack Breakthrough</div>
+      <p class="timeline-desc">Built first tic tac toe with ai bot app end-to-end. deployed projects on github . </p>
+    </div>
+    
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">2024</div>
+      <div class="timeline-title">The Beginning — "Hello, World."</div>
+      <p class="timeline-desc">Enrolled in AI&Ds . Wrote my first lines of Python. Immediately knew this was it. </p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-inner">
+    <div class="section-label reveal" style="text-align:center">// Contact</div>
+    <h2 class="section-title reveal" style="text-align:center">Let's build<br />something.</h2>
+    <div class="availability-badge reveal">
+      <span class="avail-dot"></span>
+      Open to internships &amp; collaborations
+    </div>
+    <p class="contact-tagline reveal">I'm always excited to connect with people building interesting things. Whether it's an internship, a collab, or just a chat — reach out.</p>
+    <div class="contact-links reveal">
+      <a href="mailto:harsoradheer19@gmail.com" class="contact-link">📧 &nbsp;harsoradheer19@gmail.com</a>
+      <a href="https://github.com/harsoradheer19-hub" class="contact-link">🐙 &nbsp;github/Dheer Harsora</a>
+      <a href="https://linkedin.com/in/dheer-harsora" class="contact-link">💼 &nbsp;linkedin/Dheer Harsora</a>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <span>Designed & built by Alex Chen · 2025</span>
+  <span>Built with HTML · CSS · JS</span>
+</footer>
+
+<script src="particles.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
